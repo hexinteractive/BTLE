@@ -1,0 +1,140 @@
+
+.lamp {
+  /*nothing*/
+  transition: box-shadow 0 2.5s linear 0;
+  box-shadow: 0 0 0 0 yellow;
+  z-index: 20;
+}
+
+
+
+
+#tLamp {
+  display: block;
+  height: 24px;
+  width: 30px;
+  position: absolute;
+  top:98px;
+  left:45px;
+  border-radius: 100px 100px 50px 50px;
+  background: #c00;
+}
+
+#tLamp:after {
+  width: 30px;
+  height: 1px;
+  /*background: rgb(60,180,20);*/
+  content: '';
+  display: block;
+  position: absolute;
+  top:-28px;
+  left:-10px;
+  border: 0 solid transparent;
+  border-width: 0 10px 30px;
+  border-bottom-color: #cdcc94;
+}
+
+#tLamp.on {
+  background: #f20;
+  box-shadow: 0 0 40px 25px yellow;
+}
+
+#tLamp.on1,
+#tLamp.on5 {
+  background: #f20;
+  box-shadow: 0 0 40px 8px lime;
+}
+#tLamp.on2,
+#tLamp.on6{
+  background: #f20;
+  box-shadow: 0 0 40px 25px violet;
+}
+#tLamp.on3,
+#tLamp.on7 {
+  background: #f20;
+  box-shadow: 0 0 40px 15px yellow;
+}
+#tLamp.on4 {
+/*  background: #f20;
+  box-shadow: 0 0 40px 15px yellow;*/
+}
+
+
+#tLamp.on:after {
+  border-bottom-color: #fd5;
+}
+
+
+
+
+/*+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x+x*/
+
+
+
+#fLamp {
+  display: block;
+  height: 80px;
+  width: 5px;
+  position: absolute;
+  bottom:30px;
+  left:400px;
+  background: brown;
+
+
+}
+
+#fLamp:before {
+  border: 0 solid transparent;
+  /*border-width: 0 20px 10px;*/
+  border-width: 0 16px 6px;
+  border-color: transparent transparent brown;
+  /*border-radius: 0 0 40px 40px;*/
+  content: "";
+  display: block;
+  height: 1px;
+  left: -14px;
+  position: absolute;
+  bottom: -5px;
+  width: 1px;
+}
+
+#fLamp:after {
+  border: 0 solid transparent;
+  border-width: 0 20px 10px;
+  border-color: #cdcc94;
+  border-radius: 0 0 40px 40px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: -18px;
+  position: absolute;
+  top: -10px;
+  width: 1px;
+}
+
+#fLamp.on:after {
+  box-shadow: 0 0 40px 25px yellow;
+}
+
+#fLamp.on1:after,
+#fLamp.on5:after {
+  box-shadow: 0 0 40px 8px lime;
+}
+#fLamp.on2:after,
+#fLamp.on6:after{
+  box-shadow: 0 0 40px 25px violet;
+}
+#fLamp.on3:after,
+#fLamp.on7:after {
+
+  box-shadow: 0 0 40px 15px yellow;
+}
+#fLamp.on4:after {
+  border-color: OrangeRed;
+  box-shadow: 0 0 40px 8px OrangeRed;
+}
+
+#fLamp.on:after {
+  border-color: #fd5;
+}
+

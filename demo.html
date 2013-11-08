@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>Lab Week 11/2013</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <link href="http://code.jquery.com/ui/1.8.21/themes/base/jquery-ui.css" rel="stylesheet">
+    <link href="http://code.jquery.com/ui/1.8.21/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
+    <script src="./jquery.ui.touch-punch.min.js"></script>
+    <script src="./actions.js"></script>
+
+    <style>
+        .circle { border-radius: 50%; display: inline-block; margin-right: 20px; }
+        #person1 { width: 50px; height: 50px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; background:lightblue; opacity:0.9; top: 40px; left: 540px; position:fixed;}
+        #person2 { width: 50px; height: 50px; padding: 0.5em; float: left; margin: 10px 10px 10px 0; background:pink; opacity:0.9; top: 140px; left: 540px; position:fixed;}
+        #lightzone { pointer-events:none; width: 400px; height: 400px; background: green; opacity:0.2; top: 40px; left: 40px; position:fixed; z-index:-1; }
+        #light { width: 100px; height: 100px; background: grey; opacity:0.9; top: 40px; right: 40px; position:fixed; z-index:-1; }
+    </style>
+    <link href="./demo.css" rel="stylesheet" />
+    <link href="./bt.css" rel="stylesheet" />
+    <link href="./people.css" rel="stylesheet" />
+    <link href="./lamps.css" rel="stylesheet" />
+
+
+</head>
+<body>
+    <div id="home" class="container">
+
+        <div id="p1" class="person draggable">
+            John
+        </div>
+
+        <div id="p2" class="person draggable">
+            Sally
+        </div>
+
+        <div id="d1" class="person draggable">
+            Dog
+        </div>
+
+        <div id="sofa"class="draggable"></div>
+
+        <div id="tv" class="on draggable"></div>
+
+        <div id="table" class="draggable"></div>
+
+        <div id="counter" class=""></div>
+        <div id="stove" class=""></div>
+
+
+        <!-- <div id="lightzone" class="circle">&nbsp;</div> -->
+        <b id="bt1" class="draggable"></b>
+        <!-- <div id="light" class="circle">&nbsp;</div> -->
+        <span id="tLamp" class="lamp draggable" ></span>
+        <span id="fLamp" class="lamp draggable" ></span>
+        <div id="wall1" class="wall"></div>
+    </div>
+</body>
+</html>
